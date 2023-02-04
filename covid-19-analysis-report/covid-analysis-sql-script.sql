@@ -86,27 +86,27 @@ FROM pop_percentage_vaccinated ppv
 
 /* TABLEAU TABLE EXPORTS */
 
--- 1
+-- 1. tableau_table_1 export
 /* Global numbers */
 SELECT SUM(new_cases) as total_cases, SUM(new_deaths) as total_deaths, SUM(new_deaths)/SUM(new_cases)*100 as death_percentage  
 FROM covid_deaths cd 
 WHERE continent != ""
 ORDER BY 1,2
 
--- 2
+-- 2. tableau_table_2 export
 SELECT continent, SUM(new_deaths) AS total_deaths_count 
 FROM covid_deaths cd
 WHERE continent != ""
 GROUP BY continent 
 ORDER BY total_deaths_count DESC
 
--- 3
+-- 3. tableau_table_3 export
 SELECT location, population, MAX(total_cases) AS highest_infection_count, MAX(total_cases/population)*100 as percentage_population_infected
 FROM covid_deaths cd
 GROUP BY location, population
 ORDER BY percentage_population_infected DESC 
 
--- 4
+-- 4. tableau_table_4 export
 SELECT location, population, `date`, MAX(total_cases) AS highest_infection_count, MAX(total_cases/population)*100 as percentage_population_infected  
 FROM covid_deaths cd 
 GROUP BY location , population , `date` 

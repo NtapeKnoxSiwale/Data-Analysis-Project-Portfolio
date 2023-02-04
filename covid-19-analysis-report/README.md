@@ -2,7 +2,14 @@
 
 ## Data Collection
 
-The COVID-19 World Data from 2021 to 2022 was downloaded from [Here](https://ourworldindata.org/covid-deaths)
+The COVID-19 World Data from 2021 to 2022 was downloaded from [Here](https://ourworldindata.org/covid-deaths).
+
+NOTE: `/data/` has been excluded from the repository.
+
+The Data was divided into two parts using Excel:
+
+1. `covid_vaccination.csv`
+2. `covid_death.csv`
 
 ## SQL Exploration
 
