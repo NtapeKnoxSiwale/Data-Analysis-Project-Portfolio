@@ -8,8 +8,10 @@ Given a data point `x`, we calculate it's distance from all data points in the d
 
 The images below are links to the files:
 
-[![K_Nearest_Neighbours.py](./images/code.png)](./K_Nearest_Neighbours/K_Nearest_Neighbours.py)
-[![train.py](./images/code2.png)](./K_Nearest_Neighbours/train.py)
+<p float="left">
+  <img src="./images/code.png" width="400" />
+  <img src="./images/code2.png" width="500" />
+</p>
 
 ---
 
