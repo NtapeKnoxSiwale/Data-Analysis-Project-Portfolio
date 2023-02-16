@@ -37,17 +37,7 @@ Where: $y_i$ = actual value (training samples), $(wx_i + b)$ is the estimated va
 
 This error has to be as minimum as possible hence we need to find the derivative which is given by:
 
-$$
-J'(m,b) =
-\begin{bmatrix}
-  \frac{df}{dw} \\
-  \frac{df}{db}
-\end{bmatrix}
-=
-\begin{bmatrix}
-  \frac{1}{N} \sum -2x_i \left( y_i - (wx_i + b)\right)\\
-  \frac{1}{N} \sum -2 \left( y_i - (wx_i + b)\right)
-\end{bmatrix} $$
+$$J'(m,b) = \begin{bmatrix} \frac{df}{dw} \\ \frac{df}{db} \end{bmatrix} = \begin{bmatrix} \frac{1}{N} \sum -2x_i \left( y_i - (wx_i + b)\right) \\ \frac{1}{N} \sum -2 \left( y_i - (wx_i + b)\right) \end{bmatrix}$$
 
 ### Gradient Descent
 
