@@ -70,3 +70,7 @@ db = \frac{dJ}{db} = \frac{1}{N} \sum_{i=1}^{n} -2\left( y_i - (wx_i + b)\right)
 $$
 
 To understand the concepts further discussed here, I highly recommend reading [Linear Regression Simulator](https://sushantpatrikar.github.io/linear_reg.html).
+
+You can check out the [Linear_Regression.py](./Linear_Regression/Linear_Regression.py) and the [train.py](./Linear_Regression/train.py) files.
+
+---
