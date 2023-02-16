@@ -13,8 +13,6 @@ The images below show the [K_Nearest_Neighbour.py](./K_Nearest_Neighbours/K_Near
   <img src="./images/code2.png" width="500" />
 </p>
 
----
-
 ## 2. [Linear Regression](./Linear_Regression/)
 
 **Linear Regression** is used to predict the value of a variable based on the value of other variables. The variable being predicted is called the **Dependent Variable** while the variable(s) we are using to predict it are the **Independent variable**.
@@ -59,5 +57,3 @@ $$ db = \frac{dJ}{db} = \frac{1}{N} \sum_{i=1}^{n} -2 \left( y_i - (wx_i + b) \r
 To understand the concepts further discussed here, I highly recommend reading [Linear Regression Simulator](https://sushantpatrikar.github.io/linear_reg.html).
 
 You can check out the [Linear_Regression.py](./Linear_Regression/Linear_Regression.py) and the [train.py](./Linear_Regression/train.py) files.
-
----

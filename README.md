@@ -8,19 +8,13 @@ Each project typically includes a description of the problem being addressed, th
 
 This project used Python's pandas library to analyze sales data and answer several questions related to sales trends. The analysis focused on determining the best month for sales and the corresponding earnings, identifying the city with the highest number of sales, determining the optimal time for displaying advertisements, identifying frequently sold products, and determining the top-selling product and the reasons for its success. By answering these questions, the analysis aimed to provide valuable insights for improving sales and increasing revenue.
 
----
-
 ## 2. [Covid-19 Global Analysis using SQL and Tableau](./covid_19_global_analysis/README.md)
 
 This project involved performing data cleaning on a COVID-19 global dataset using SQL, followed by creating a visualization of the data in Tableau. The cleaned dataset was used to analyze and understand trends in the spread of COVID-19 across the world.
 
----
-
 ## 3. [Data Cleaning With SQL](./nasheville_housing_data_cleaning/README.md)
 
 This project involves cleaning a Nashville housing dataset with the goal of preparing it for analysis of the housing market. The data cleaning steps taken include filling in missing property addresses, splitting address columns, standardizing values in one of the columns, removing duplicates, and deleting unused columns. The cleaned dataset can now be used for further analysis or shared with other researchers.
-
----
 
 ## 4. [Machine Learning Models](./machine_learning_models/README.md)
 
