@@ -52,12 +52,9 @@ where $\alpha$ is a constant learning rate.
 
 Thus we have the following after differentiating
 
-$$
- dw = \frac{dJ}{dw} = \frac{1}{N} \sum_{i=1}^{n} -2x_i\left(y_i - (wx_i + b)\right) = \frac{1}{N} \sum_{i=1}^{n} 2x_i\left(\hat{y} - y_i\right)
-$$
-$$
-db = \frac{dJ}{db} = \frac{1}{N} \sum_{i=1}^{n} -2\left( y_i - (wx_i + b)\right) = \frac{1}{N} \sum_{i=1}^{n} 2\left(\hat{y} - y_i\right)
-$$
+$$ dw = \frac{dJ}{dw} = \frac{1}{N} \sum_{i=1}^{n} -2x_i\left(y_i - (wx_i + b)\right) = \frac{1}{N} \sum_{i=1}^{n} 2x_i\left(\hat{y} - y_i\right) $$
+
+$$ db = \frac{dJ}{db} = \frac{1}{N} \sum_{i=1}^{n} -2 \left( y_i - (wx_i + b) \right) = \frac{1}{N} \sum_{i=1}^{n} 2 \left( \hat{y} - y_i \right) $$
 
 To understand the concepts further discussed here, I highly recommend reading [Linear Regression Simulator](https://sushantpatrikar.github.io/linear_reg.html).
 
