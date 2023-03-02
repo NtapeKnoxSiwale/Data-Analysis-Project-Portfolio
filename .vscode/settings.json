@@ -1,16 +1,17 @@
 {
-    "sqltools.connections": [
-        {
-            "mysqlOptions": {
-                "authProtocol": "default"
-            },
-            "previewLimit": 50,
-            "server": "localhost",
-            "port": 3306,
-            "driver": "MySQL",
-            "database": "Nashville_Housing",
-            "username": "sqluser",
-            "name": "Nashville Housing Data"
-        }
-    ]
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MySQL",
+      "database": "Nashville_Housing",
+      "username": "sqluser",
+      "name": "Nashville Housing Data"
+    }
+  ],
+  "python.analysis.typeCheckingMode": "off"
 }
