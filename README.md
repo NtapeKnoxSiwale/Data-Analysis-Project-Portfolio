@@ -1,8 +1,10 @@
 # Data Science Project Portfolio
 
-This data science project portfolio repository showcases a collection of data science projects that I have completed The projects demonstrate a range of data science skills, including data cleaning, data analysis, data visualization, statistical modeling, machine learning, and more.
+This data science project portfolio repository showcases a collection of data science projects that demonstrate a range of data science skills, including data cleaning, data analysis, data visualization, statistical modeling, machine learning, and more.
 
-Each project typically includes a description of the problem being addressed, the dataset being used, the techniques and algorithms applied, and the insights gained from the analysis. The repository may also include additional resources, such as code examples, tutorials, and instructional materials, to help others learn and apply the techniques used in the projects.
+Each project includes a description of the problem being addressed, the dataset being used, the techniques and algorithms applied, and the insights gained from the analysis.
+
+The repository may also include additional resources, such as code examples, tutorials, and instructional materials, to help others learn and apply the techniques used in the projects.
 
 ## 1. [Sales Analysis Notebook](./sales_analysis/sales_analysis_2019.ipynb)
 
@@ -23,3 +25,7 @@ This project involves cleaning a Nashville housing dataset with the goal of prep
 ## 5. [Machine Learning Models](./machine_learning_models/README.md)
 
 This project involves building several machine learning models from scratch using Python. The objective of the project is to gain a deeper understanding of how these models work by implementing them from the ground up. The models may include basic regression and classification models, as well as more complex models such as decision trees, random forests, and neural networks. The project may also involve exploring different algorithms and techniques used for model training and validation. By building and testing these models from scratch, the project aims to provide a more comprehensive understanding of how machine learning algorithms work and how they can be applied to real-world problems.
+
+## 6. [Excel Data Visualisation](./excel_project/)
+
+## 7. [US Accidents Exploratory Data Analysis Notebook](./exploratory_data_analysis/us-accidents-analysis.ipynb)
