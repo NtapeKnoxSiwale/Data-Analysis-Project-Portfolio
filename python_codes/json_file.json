@@ -1,14 +1,8 @@
 [
   {
-    "id": "1",
-    "name": "Jane Doe",
-    "column_1": 123,
-    "column_2": "this is jane doe test text"
-  },
-  {
-    "id": "2",
-    "name": "John Doe",
-    "column_1": 1234,
-    "column_2": "this is john doe test text"
+    "id": 0,
+    "name": "Name 0",
+    "age": 100,
+    "country": ""
   }
 ]

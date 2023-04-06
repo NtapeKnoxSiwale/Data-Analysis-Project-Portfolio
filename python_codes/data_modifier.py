@@ -49,45 +49,43 @@ def modify_column_value(json_file, data):
     modified_values = {}
     for modification in modifications:
         # Check that the modification dictionary contains the required keys
-        if not all(key in modification for key in ('id', 'name', 'column_1', 'column_2')):
-            raise ValueError("Modification does not contain all required keys")
+        if not all(key in modification for key in ('id', 'name', 'age', 'country')):
+            continue
 
         id_column = modification['id']
         name = modification['name']
-        new_value_1 = modification.get('column_1')
-        new_value_2 = modification.get('column_2')
+        new_age = modification.get('age')
+        new_country = modification.get('country')
 
-        # Find rows matching the farmer name and harvest id
-        mask = (df['id'] == id_column) & (
-            df['name'] == name)
+        # Find rows matching the id and name
+        mask = (df['id'] == id_column) & (df['name'] == name)
         rows = df.loc[mask]
 
         if not rows.empty:
             # Store old values
-            old_value_1 = rows['column_1'].values[0]
-            old_value_2 = rows['column_2'].values[0]
+            old_age = rows['age'].values[0]
+            old_country = rows['country'].values[0]
 
             # Store modified values in a dictionary
-            if new_value_1 is not None:
-                modified_values[(id, name, 'column_1')] = new_value_1
-            if new_value_2 is not None:
-                modified_values[(id, name, 'column_2')] = new_value_2
+            if new_age is not None:
+                modified_values[(id_column, name, 'age')] = new_age
+            if new_country is not None:
+                modified_values[(id_column, name, 'country')] = new_country
 
             # Update 'modified' and 'modification' columns
             df.loc[mask, 'modified'] = True
             modification_str = ''
-            if new_value_1 is not None:
-                modification_str += f"The {old_value_1} has been changed to {new_value_1}"
-            if new_value_2 is not None:
+            if new_age is not None:
+                modification_str += f"The age {old_age} has been changed to {new_age}."
+            if new_country is not None:
                 if modification_str:
-                    modification_str += ' and '
-                modification_str += f"The {old_value_2} has been changed to {old_value_2}"
+                    modification_str += ' '
+                modification_str += f"The country {old_country} has been changed to {new_country}."
             df.loc[mask, 'modification'] = modification_str
 
     # Apply modifications to the DataFrame
     for (id, name, column), value in modified_values.items():
-        mask = (df['id'] == id) & (
-            df['name'] == name)
+        mask = (df['id'] == id) & (df['name'] == name)
         df.loc[mask, column] = value
 
     # Return the modified copy of the DataFrame
