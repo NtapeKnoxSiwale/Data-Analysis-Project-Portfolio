@@ -49,7 +49,7 @@ def modify_column_value(json_file, data):
     modified_values = {}
     for modification in modifications:
         # Check that the modification dictionary contains the required keys
-        if not all(key in modification for key in ('id', 'name', 'age', 'country')):
+        if not all(key in modification for key in ('id', 'name')):
             continue
 
         id_column = modification['id']
